@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
     await mongoose.connect(process.env.MONGO_URI, {
-        dbName: "business"
+        dbName: process.env.DATALINK_ENV === 'development' ? process.env.BUDGERCLIENT_SCHEMA_DEV : process.env.BUDGERCLIENT_SCHEMA_PROD
     });
 };
 

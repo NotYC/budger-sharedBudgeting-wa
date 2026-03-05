@@ -269,5 +269,13 @@ export const logout = async (req,res) => {
             message: "Internal Server Error"
         })
     }
+}
 
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+export const auth_health = async (req, res) => {
+    return res.status(200).json({
+        status: "success",
+        message: "Healthy\nAuth API is up and running"
+    })
 }
