@@ -67,3 +67,4 @@ Thumbs.db
 # Misc (optional but useful)
 # ------------------------------
 *.local
+/.venv/
